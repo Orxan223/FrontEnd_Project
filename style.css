@@ -10,6 +10,11 @@ img {
 
 header {
   border-bottom: 1px solid rgba(41, 41, 41, 0.1);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-after: 1px solid #d8d6d6;
+          border-block-end: 1px solid #d8d6d6;
+  position: fixed;
 }
 
 header .menu {
@@ -51,11 +56,11 @@ header ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 124px 112px;
+  padding: 200px 120px;
 }
 
 #home .box .imgbox {
-  width: 650px;
+  width: 675px;
   height: 100%;
   border-radius: 50%;
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
@@ -109,5 +114,123 @@ header ul li {
   font-weight: 700;
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+}
+
+#about .imgbox {
+  background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  padding: 10px;
+}
+
+#about .social {
+  background-image: -webkit-gradient(linear, right top, left top, from(#c471ed), to(#f64f59));
+  background-image: linear-gradient(to left, #c471ed, #f64f59);
+  position: relative;
+  top: -67px;
+  padding: 15px;
+  border-radius: 0 20px;
+  width: 200px;
+}
+
+#about .social i {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  margin: 0 2px;
+}
+
+#about .social i:hover {
+  background-color: black;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#about .title {
+  padding-bottom: 50px;
+}
+
+#about .title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #292929;
+  margin-bottom: 20px;
+}
+
+#about .title h3 {
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #676b6e;
+}
+
+#about .all {
+  padding: 50px 0 0 50px;
+}
+
+#about .all .textbox h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#about .all .textbox h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#about .all .textbox .theme {
+  background-image: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#f64f59), to(#f64f59));
+  background-image: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about .all .textbox p {
+  color: #767676;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+#about .all .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .all .about .box ul li {
+  line-height: 3;
+  font-weight: 600;
+  font-size: 14px;
+  padding-right: 20px;
+  border-right: 1px solid rgba(41, 41, 41, 0.1);
+}
+
+#about .all .about .content ul li {
+  line-height: 3;
+  padding: 0 15px;
+  font-size: 14px;
+  padding-right: 39px;
+  color: #676b6e;
+}
+
+#about .all .btn {
+  color: white;
+  margin-top: 25px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  margin-top: 35px;
 }
 /*# sourceMappingURL=style.css.map */
