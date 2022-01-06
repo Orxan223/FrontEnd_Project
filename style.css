@@ -368,4 +368,60 @@ header ul li {
 #myskill .boxs .box h6 {
   font-size: 20px;
 }
+
+#service h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#service h3 {
+  color: #787878;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+#service .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(41, 41, 41, 0.1);
+  background: #fdecf487;
+  margin-bottom: 20px;
+  padding: 30px 25px;
+  border-radius: 15px;
+}
+
+#service .box i {
+  margin-right: 20px;
+  background: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px;
+  font-size: 30px;
+}
+
+#service .box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#service .box h4 {
+  line-height: 25px;
+  font-size: 17px;
+  color: #787878;
+}
 /*# sourceMappingURL=style.css.map */
