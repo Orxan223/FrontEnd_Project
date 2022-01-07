@@ -9,6 +9,12 @@ img {
   width: 100%;
 }
 
+section {
+  padding: 100px 0;
+  -webkit-border-after: 1px solid #d8d6d6;
+          border-block-end: 1px solid #d8d6d6;
+}
+
 header {
   border-bottom: 1px solid rgba(41, 41, 41, 0.1);
   width: 100%;
@@ -57,7 +63,7 @@ header ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 200px 120px;
+  padding: 100px 120px;
 }
 
 #home .box .imgbox {
@@ -423,5 +429,44 @@ header ul li {
   line-height: 25px;
   font-size: 17px;
   color: #787878;
+}
+
+#portfolio h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#portfolio h3 {
+  color: #787878;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+#portfolio .box .imgbox {
+  position: relative;
+  margin: 15px 0;
+}
+
+#portfolio .box .imgbox img {
+  border-radius: 15px;
+}
+
+#portfolio .box .text {
+  position: absolute;
+  top: -25px;
+  left: 20px;
+}
+
+#portfolio .box .text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+#portfolio .box .text h4 {
+  color: #888;
 }
 /*# sourceMappingURL=style.css.map */
