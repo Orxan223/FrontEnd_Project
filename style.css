@@ -469,4 +469,53 @@ header ul li {
 #portfolio .box .text h4 {
   color: #888;
 }
+
+#testimonial h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#testimonial h3 {
+  color: #787878;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+#testimonial .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#testimonial .box img {
+  border-radius: 50%;
+  height: 120px;
+  width: 115px;
+}
+
+#testimonial .text {
+  padding: 0 20px;
+}
+
+#testimonial .text p {
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 18px;
+  color: #787878;
+  margin-bottom: 20px;
+}
+
+#testimonial .text h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+}
+
+#testimonial .text h4 {
+  font-size: 14px;
+  color: #787878;
+}
 /*# sourceMappingURL=style.css.map */
