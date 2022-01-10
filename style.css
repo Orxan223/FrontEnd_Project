@@ -534,7 +534,8 @@ header ul li {
 
 #blog .box {
   border: 1px solid rgba(41, 41, 41, 0.1);
-  border-radius: 4%;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 #blog .box .text {
@@ -558,5 +559,118 @@ header ul li {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+#contact h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+#contact h3 {
+  color: #787878;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+#contact .boxmain {
+  border: 1px solid rgba(41, 41, 41, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+#contact .boxmain h2 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#contact .boxmain .box1 input {
+  width: 49%;
+  height: 50px;
+}
+
+#contact .boxmain .box2 input {
+  width: 99%;
+  height: 50px;
+  margin: 25px 0;
+}
+
+#contact .boxmain .box3 input {
+  height: 100px;
+  width: 99%;
+}
+
+#contact .btn {
+  color: white;
+  margin-top: 25px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+  margin-top: 35px;
+}
+
+#contact .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(41, 41, 41, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 48px;
+}
+
+#contact .box .icon {
+  font-size: 23px;
+  margin-right: 15px;
+}
+
+#contact .box .icon i {
+  color: #12c2e9;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(41, 41, 41, 0.1);
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+#contact .text h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#contact .text h5 {
+  line-height: 25px;
+  color: #646464;
+  font-size: 15px;
+}
+
+#contact .map iframe {
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+}
+
+footer .social {
+  padding: 20px 0;
+}
+
+footer .social i {
+  padding: 0px 3px;
+  color: rgba(41, 41, 41, 0.8);
+}
+
+footer h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 20px 0;
+  color: rgba(41, 41, 41, 0.8);
 }
 /*# sourceMappingURL=style.css.map */
