@@ -15,6 +15,19 @@ section {
           border-block-end: 1px solid #d8d6d6;
 }
 
+section h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+section h3 {
+  color: #787878;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
 header {
   border-bottom: 1px solid rgba(41, 41, 41, 0.1);
   width: 100%;
@@ -129,7 +142,7 @@ header ul li {
   padding: 10px;
 }
 
-#about .social {
+#about .socialbox {
   background-image: -webkit-gradient(linear, right top, left top, from(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #c471ed, #f64f59);
   position: relative;
@@ -139,7 +152,7 @@ header ul li {
   width: 200px;
 }
 
-#about .social i {
+#about .socialbox i {
   background-color: rgba(255, 255, 255, 0.4);
   color: white;
   display: -webkit-inline-box;
@@ -157,27 +170,14 @@ header ul li {
   margin: 0 2px;
 }
 
-#about .social i:hover {
+#about .socialbox i:hover {
   background-color: black;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
-#about .title {
+#about .textbox {
   padding-bottom: 50px;
-}
-
-#about .title h1 {
-  font-size: 30px;
-  font-weight: 600;
-  color: #292929;
-  margin-bottom: 20px;
-}
-
-#about .title h3 {
-  letter-spacing: 2px;
-  font-size: 13px;
-  color: #676b6e;
 }
 
 #about .all {
@@ -263,17 +263,17 @@ header ul li {
   height: 5px;
 }
 
-#myskill .title {
+#myskill .textbox {
   padding-bottom: 50px;
 }
 
-#myskill .title h1 {
+#myskill .textbox h1 {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 25px;
 }
 
-#myskill .title h3 {
+#myskill .textbox h3 {
   color: #787878;
   letter-spacing: 2px;
   font-size: 14px;
@@ -375,19 +375,6 @@ header ul li {
   font-size: 20px;
 }
 
-#service h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-#service h3 {
-  color: #787878;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 50px;
-}
-
 #service .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,19 +418,6 @@ header ul li {
   color: #787878;
 }
 
-#portfolio h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-#portfolio h3 {
-  color: #787878;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 50px;
-}
-
 #portfolio .box .imgbox {
   position: relative;
   margin: 15px 0;
@@ -453,34 +427,21 @@ header ul li {
   border-radius: 15px;
 }
 
-#portfolio .box .text {
+#portfolio .box .imgbox .textbox {
   position: absolute;
-  top: -25px;
+  top: 25px;
   left: 20px;
 }
 
-#portfolio .box .text h2 {
+#portfolio .box .imgbox .textbox h2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
   color: #fff;
 }
 
-#portfolio .box .text h4 {
+#portfolio .box .imgbox .textbox h4 {
   color: #888;
-}
-
-#testimonial h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-#testimonial h3 {
-  color: #787878;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 50px;
 }
 
 #testimonial .box {
@@ -495,11 +456,11 @@ header ul li {
   width: 115px;
 }
 
-#testimonial .text {
+#testimonial .textbox {
   padding: 0 20px;
 }
 
-#testimonial .text p {
+#testimonial .textbox p {
   letter-spacing: 1px;
   line-height: 25px;
   font-size: 18px;
@@ -507,29 +468,16 @@ header ul li {
   margin-bottom: 20px;
 }
 
-#testimonial .text h2 {
+#testimonial .textbox h2 {
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 16px;
   letter-spacing: 0.3px;
 }
 
-#testimonial .text h4 {
+#testimonial .textbox h4 {
   font-size: 14px;
   color: #787878;
-}
-
-#blog h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-#blog h3 {
-  color: #787878;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 50px;
 }
 
 #blog .box {
@@ -538,66 +486,53 @@ header ul li {
   border-radius: 15px;
 }
 
-#blog .box .text {
+#blog .box .textbox {
   padding: 15px;
 }
 
-#blog .box .text h2 {
+#blog .box .textbox h2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-#blog .box .text h4 {
+#blog .box .textbox h4 {
   color: #787878;
   line-height: 25px;
   margin-bottom: 15px;
 }
 
-#blog .box .text .btn {
+#blog .box .textbox .btn {
   padding: 0px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
 }
 
-#contact h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-#contact h3 {
-  color: #787878;
-  letter-spacing: 2px;
-  font-size: 14px;
-  margin-bottom: 50px;
-}
-
-#contact .boxmain {
+#contact .boxs {
   border: 1px solid rgba(41, 41, 41, 0.1);
   padding: 30px;
   border-radius: 15px;
 }
 
-#contact .boxmain h2 {
+#contact .boxs h2 {
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 600;
 }
 
-#contact .boxmain .box1 input {
+#contact .boxs .box1 input {
   width: 49%;
   height: 50px;
 }
 
-#contact .boxmain .box2 input {
+#contact .boxs .box2 input {
   width: 99%;
   height: 50px;
   margin: 25px 0;
 }
 
-#contact .boxmain .box3 input {
+#contact .boxs .box3 input {
   height: 100px;
   width: 99%;
 }
@@ -619,7 +554,7 @@ header ul li {
   display: flex;
   border: 1px solid rgba(41, 41, 41, 0.1);
   border-radius: 15px;
-  padding: 20px;
+  padding: 16px 45px;
   margin-bottom: 48px;
 }
 
@@ -636,13 +571,13 @@ header ul li {
   border-radius: 15px;
 }
 
-#contact .text h4 {
+#contact .textbox h4 {
   font-weight: 600;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
-#contact .text h5 {
+#contact .textbox h5 {
   line-height: 25px;
   color: #646464;
   font-size: 15px;
@@ -654,11 +589,11 @@ header ul li {
   border-radius: 15px;
 }
 
-footer .social {
+footer .socialbox {
   padding: 20px 0;
 }
 
-footer .social i {
+footer .socialbox i {
   padding: 0px 3px;
   color: rgba(41, 41, 41, 0.8);
 }
