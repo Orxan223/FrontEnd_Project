@@ -79,43 +79,12 @@ header ul li {
   padding: 100px 120px;
 }
 
-@media (max-width: 992px) {
-  #home .box {
-    padding: 50px 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-}
-
 #home .box .imgbox {
   width: 675px;
   height: 100%;
   border-radius: 50%;
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
-}
-
-@media (max-width: 992px) {
-  #home .box .imgbox {
-    width: 650px;
-    height: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 300px;
-            flex: 0 0 300px;
-    max-width: 300px;
-  }
 }
 
 #home .box .imgbox img {
@@ -128,29 +97,12 @@ header ul li {
   line-height: 1.2;
 }
 
-@media (max-width: 992px) {
-  #home .box .textbox {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    padding-left: 15px;
-  }
-}
-
 #home .box .textbox h2 {
   color: #292929;
   font-size: 15px;
   margin-bottom: 10px;
   margin-top: 5px;
   font-weight: 500;
-}
-
-@media (max-width: 992px) {
-  #home .box .textbox h2 {
-    width: 100%;
-  }
 }
 
 #home .box .textbox h1 {
@@ -175,12 +127,6 @@ header ul li {
   margin-bottom: 0px;
 }
 
-@media (max-width: 992px) {
-  #home .box .textbox h3 {
-    margin-bottom: 0px;
-  }
-}
-
 #home .box .textbox .btn {
   color: white;
   margin-top: 25px;
@@ -189,6 +135,34 @@ header ul li {
   font-weight: 700;
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+}
+
+@media screen and (max-width: 576px) {
+  #home .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+  }
+  #home .box .imgbox {
+    width: 275px;
+    height: 100%;
+  }
+  #home .box .textbox {
+    width: 100%;
+    padding-left: 0px;
+  }
 }
 
 #about .imgbox {
@@ -235,12 +209,6 @@ header ul li {
   padding: 50px 0 0 50px;
 }
 
-@media (max-width: 576px) {
-  #about .boxs {
-    padding: 0px;
-  }
-}
-
 #about .boxs .textbox h2 {
   font-weight: 700;
   font-size: 28px;
@@ -265,13 +233,19 @@ header ul li {
   margin-bottom: 10px;
 }
 
-#about .boxs .about {
+#about .boxs .abouts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#about .boxs .about .box ul li {
+#about .boxs .abouts .aboutbox1, #about .boxs .abouts .aboutbox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .boxs .abouts .box ul li {
   line-height: 3;
   font-weight: 600;
   font-size: 14px;
@@ -279,7 +253,7 @@ header ul li {
   border-right: 1px solid rgba(41, 41, 41, 0.1);
 }
 
-#about .boxs .about .content ul li {
+#about .boxs .abouts .content ul li {
   line-height: 3;
   padding: 0 15px;
   font-size: 14px;
@@ -296,6 +270,15 @@ header ul li {
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
   margin-top: 35px;
+}
+
+@media screen and (max-width: 576px) {
+  #about .boxs {
+    padding: 0px;
+  }
+  #about .boxs .abouts {
+    display: block;
+  }
 }
 
 #myskill h4 {
@@ -403,12 +386,6 @@ header ul li {
   width: 95%;
 }
 
-@media (max-width: 576px) {
-  #myskill .boxs {
-    margin: 0px 20px 20px 10px;
-  }
-}
-
 #myskill .boxs .box {
   border: 1px solid rgba(41, 41, 41, 0.1);
   background: rgba(255, 255, 255, 0.6);
@@ -424,12 +401,6 @@ header ul li {
   border-radius: 15px;
 }
 
-@media (max-width: 576px) {
-  #myskill .boxs .box {
-    width: 50%;
-  }
-}
-
 #myskill .boxs .box i {
   color: #12c2e9;
   font-size: 30px;
@@ -438,6 +409,15 @@ header ul li {
 
 #myskill .boxs .box h6 {
   font-size: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  #myskill .boxs {
+    margin: 0 25px 15px 0;
+  }
+  #myskill .boxs .box {
+    padding: 30px 0px;
+  }
 }
 
 #service .box {
@@ -545,16 +525,16 @@ header ul li {
   color: #787878;
 }
 
+@media screen and (max-width: 576px) {
+  #testimonial .textbox p {
+    margin-bottom: 30px;
+  }
+}
+
 #blog .box {
   border: 1px solid rgba(41, 41, 41, 0.1);
   overflow: hidden;
   border-radius: 15px;
-}
-
-@media (max-width: 576px) {
-  #blog .box {
-    margin-bottom: 20px;
-  }
 }
 
 #blog .box .textbox {
@@ -578,6 +558,12 @@ header ul li {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 576px) {
+  #blog .box {
+    margin-bottom: 20px;
+  }
 }
 
 #contact .boxs {
@@ -660,24 +646,17 @@ header ul li {
   border-radius: 15px;
 }
 
-footer .socialbox {
-  padding: 20px 0;
-}
-
-@media (max-width: 576px) {
-  footer .socialbox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+@media screen and (max-width: 576px) {
+  #contact .boxs .box1 input {
+    width: 48%;
+  }
+  #contact .box {
+    padding: 16px 10px;
   }
 }
 
-footer .socialbox i {
-  padding: 0px 3px;
-  color: rgba(41, 41, 41, 0.8);
+footer .socialbox {
+  padding: 20px 0;
 }
 
 footer h6 {
@@ -691,15 +670,17 @@ footer h6 {
   color: rgba(41, 41, 41, 0.8);
 }
 
-@media (max-width: 576px) {
-  footer h6 {
+@media screen and (max-width: 576px) {
+  footer .socialbox, footer h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 5px 0;
+  }
+  footer i {
+    margin: 0 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,19 @@
 footer
     .socialbox
         padding: 20px 0
-        @include media(small)
-            display: flex
-            justify-content: center
-        i
-            padding: 0px 3px
-            color: rgba(41, 41, 41, 0.8)
+
     h6
         display: flex
         justify-content: end
         padding: 20px 0
         color: rgba(41, 41, 41, 0.8)
 
-        @include media(small)
+
+
+@media screen and (max-width: 576px)
+    footer
+        .socialbox ,  h6
             display: flex
             justify-content: center
-            padding: 5px 0
+        i
+            margin: 0 5px

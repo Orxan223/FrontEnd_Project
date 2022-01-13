@@ -25,8 +25,7 @@
     
     .boxs
         padding: 50px 0 0 50px
-        @include media(small)
-            padding: 0px
+
 
         .textbox
             h2
@@ -45,8 +44,10 @@
                 color: #767676
                 line-height: 24px
                 margin-bottom: 10px
-        .about
+        .abouts
             display: flex
+            .aboutbox1 , .aboutbox2
+                display: flex
             .box
                 ul
                     li
@@ -73,3 +74,12 @@
             margin-top: 35px
                 
         
+@media screen and (max-width: 576px)
+    #about
+        .boxs
+            padding: 0px
+            .abouts
+                display: block
+            .box
+                
+
