@@ -196,6 +196,46 @@ header ul li {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #home .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+  }
+  #home .box .imgbox {
+    width: 275px;
+    height: 100%;
+  }
+  #home .box .textbox {
+    width: 100%;
+    padding-left: 0px;
+  }
+  #home .box .textbox h2 {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #home .box {
+    padding: 50px 25px;
+  }
+  #home .box .textbox h3 {
+    font-size: 17px;
+  }
+}
+
 #about .imgbox {
   background-image: -webkit-gradient(linear, right top, left top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
   background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
@@ -237,7 +277,7 @@ header ul li {
 }
 
 #about .boxs {
-  padding: 50px 0 0 50px;
+  padding: 0px 0 0 50px;
 }
 
 #about .boxs .textbox h2 {
@@ -276,19 +316,22 @@ header ul li {
   display: flex;
 }
 
+#about .boxs .abouts .aboutbox1 {
+  margin-right: 20px;
+}
+
 #about .boxs .abouts .box ul li {
   line-height: 3;
   font-weight: 600;
   font-size: 14px;
-  padding-right: 20px;
+  padding-right: 10px;
   border-right: 1px solid rgba(41, 41, 41, 0.1);
 }
 
 #about .boxs .abouts .content ul li {
   line-height: 3;
-  padding: 0 15px;
+  padding: 0 5px;
   font-size: 14px;
-  padding-right: 39px;
   color: #676b6e;
 }
 
@@ -318,6 +361,21 @@ header ul li {
   }
   #about .boxs .abouts {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #about .boxs {
+    padding: 0px;
+  }
+  #about .boxs .abouts .content {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #about .boxs {
+    padding: 50px 0 0 50px;
   }
 }
 
@@ -471,6 +529,22 @@ header ul li {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #myskill .boxs {
+    margin: 0 25px 15px 0px;
+    width: 100%;
+  }
+  #myskill .boxs .box {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #myskill .boxs {
+    margin: 0 25px 20px 57px;
+  }
+}
+
 #service .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,6 +586,12 @@ header ul li {
   line-height: 25px;
   font-size: 17px;
   color: #787878;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #service .box h4 {
+    font-size: 14px;
+  }
 }
 
 #portfolio .box .imgbox {
@@ -596,6 +676,18 @@ header ul li {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #testimonial .box {
+    margin-bottom: 30px;
+  }
+  #testimonial .textbox {
+    margin-bottom: 20px;
+  }
+  #testimonial .textbox p {
+    margin-bottom: 15px;
+  }
+}
+
 #blog .box {
   border: 1px solid rgba(41, 41, 41, 0.1);
   overflow: hidden;
@@ -632,6 +724,12 @@ header ul li {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  #blog .box {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   #blog .box {
     margin-bottom: 50px;
   }
@@ -745,8 +843,26 @@ header ul li {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #contact .boxs {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #contact .box {
+    padding: 20px 20px;
+    margin-bottom: 36px;
+  }
+}
+
 footer .socialbox {
   padding: 20px 0;
+}
+
+footer .socialbox i {
+  color: #564446;
+  padding: 0 3px;
 }
 
 footer h6 {
@@ -770,7 +886,7 @@ footer h6 {
             justify-content: center;
   }
   footer i {
-    margin: 0 5px;
+    padding: 0px 5px;
   }
 }
 
@@ -784,7 +900,19 @@ footer h6 {
             justify-content: center;
   }
   footer i {
-    margin: 0 5px;
+    padding: 0px 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  footer i {
+    padding: 0 3px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  footer i {
+    padding: 0 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

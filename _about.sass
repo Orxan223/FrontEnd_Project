@@ -24,7 +24,7 @@
                 transition: all 0.8s
     
     .boxs
-        padding: 50px 0 0 50px
+        padding: 0px 0 0 50px
 
 
         .textbox
@@ -48,21 +48,22 @@
             display: flex
             .aboutbox1 , .aboutbox2
                 display: flex
+            .aboutbox1
+                margin-right: 20px
             .box
                 ul
                     li
                         line-height: 3
                         font-weight: 600
                         font-size: 14px
-                        padding-right: 20px
+                        padding-right: 10px
                         border-right: 1px solid rgba(41, 41, 41, 0.1)
             .content
                 ul
                     li
                         line-height: 3
-                        padding: 0 15px
+                        padding: 0 5px
                         font-size: 14px
-                        padding-right: 39px
                         color: #676b6e
         .btn
             color: white
@@ -89,3 +90,18 @@
             .abouts
                 display: block
 
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    #about
+        .boxs
+            padding: 0px
+            .abouts
+                .content
+                    margin-right: 100px   
+
+
+@media only screen and (min-width: 1200px)
+    #about
+        .boxs
+            padding: 50px 0 0 50px
+
+                
