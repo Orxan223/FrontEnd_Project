@@ -35,6 +35,7 @@ header {
   -webkit-border-after: 1px solid #d8d6d6;
           border-block-end: 1px solid #d8d6d6;
   position: fixed;
+  z-index: 1;
 }
 
 header .menu {
