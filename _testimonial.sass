@@ -1,51 +1,49 @@
 #testimonial
     .box
-        border: 1px solid #cfcacaee
-        border-radius: 15px
-        padding: 30px
         display: flex
-        
-        .imgbox
-            width: 29%
+        img
             border-radius: 50%
-            overflow: hidden
-            height: 115px
+            height: 120px
             width: 115px
-           
-        .textbox
-            width: 70%
-            margin-left: 20px
+    .textbox
+        padding: 0 20px
+        p
+            letter-spacing: 1px
+            line-height: 25px
+            font-size: 18px
+            color: #787878
+            margin-bottom: 20px
+        h2
+            font-weight: 600
+            margin-bottom: 10px
+            font-size: 16px
+            letter-spacing: 0.3px
+        h4
+            font-size: 14px
+            color: #787878
 
-            h2
-                font-weight: 700
-                font-size: 20px
-                margin: 10px 0
-            h4
-                font-size: 15px
-                color: #787878
-
-            p
-                font-size: 19px
-
-
-
-           
-        
 @media screen and (max-width: 576px)
     #testimonial
-        .box
-            .imgbox
-                height: 78px
-                width: 85px
-            
+        .textbox
+            margin-bottom: 20px
+            p
+                margin-bottom: 10px
+                font-size: 15px
+
 @media only screen and (min-width: 576px) and (max-width: 768px)
     #testimonial
-        .box
+        .textbox
             margin-bottom: 20px
+            p
+                margin-bottom: 10px
+                font-size: 15px
 
 @media only screen and (min-width: 768px) and (max-width: 992px)
     #testimonial
         .box
-            .imgbox
-                height: 90px
-                width: 110px
+            margin-bottom: 30px
+        .textbox
+            margin-bottom: 20px
+            p
+                margin-bottom: 15px
+

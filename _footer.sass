@@ -1,24 +1,41 @@
 footer
-    padding: 20px 0
     .socialbox
+        padding: 20px 0
         i
-            font-size: 17px
-            margin: 0 3px
-            color: #464343
+            color: #564446
+            padding: 0 3px
+
     h6
-        font-size: 18px
-        color: #838080
-        text-align: end
+        display: flex
+        justify-content: end
+        padding: 20px 0
+        color: rgba(41, 41, 41, 0.8)
+
+
 
 @media screen and (max-width: 576px)
     footer
-        .socialbox,h6
-            text-align: center
+        .socialbox ,  h6
+            display: flex
+            justify-content: center
+        i
+            padding: 0px 5px
 
 @media only screen and (min-width: 576px) and (max-width: 768px)
     footer
-        .socialbox,h6
-            text-align: center
-        .socialbox
-            margin-bottom: 20px
+        .socialbox ,  h6
+            display: flex
+            justify-content: center
+        i
+            padding: 0px 5px
 
+@media only screen and (min-width: 768px) and (max-width: 992px)
+    footer
+        i
+            padding: 0 3px
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px)
+    footer
+        i
+            padding: 0 3px

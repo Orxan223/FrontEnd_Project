@@ -1,55 +1,71 @@
 #home
-    padding: 200px 0
     .box
         display: flex
         justify-content: center
+        padding: 100px 120px
+
+
         .imgbox
-            width: 300px
-            height: 300px
-            background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59)
+            width: 675px
+            height: 100%
             border-radius: 50%
+            background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59)
+            
+                
+
             img
                 border-radius: 50%
                 padding: 7px
+
         .textbox
             padding-left: 70px
-            width: 40%
-            h1
-                font-size: 45px
-                font-weight: 600
-            h2
-                font-size: 18px
-                padding-bottom: 20px
+            line-height: 1.2
 
-                
-            
-            .theme
-                background-image: linear-gradient(to right, #12c2e9, #f64f59, #f64f59)
-                -webkit-text-fill-color: transparent
-                -webkit-background-clip: text
-            .btn
-                color: whitew
-                padding: 10px 18px
-                border-radius: 30px
-                letter-spacing: 1px
-                margin-top: 20px
-                font-size: 18px
-                background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59)
+            h2
+                color: #292929
+                font-size: 15px
+                margin-bottom: 10px
+                margin-top: 5px
+                font-weight: 500
+
+
+            h1
+                color: #292929
                 font-weight: 700
+                font-size: 40px
+                margin-bottom: 5px
+                span
+                   background-image: linear-gradient(to right, #12c2e9, #f64f59, #f64f59)
+                   -webkit-background-clip: text
+                   -webkit-text-fill-color: transparent
+            h3
+                line-height: 1.5
+                letter-spacing: 0.3px
+                font-size: 18px
+                color: #686767
+                margin-bottom: 0px
+
+            .btn
+                color: white
+                margin-top: 25px
+                padding: 10px 25px
+                border-radius: 25px
+                font-weight: 700
+                background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59)
+
 
 @media screen and (max-width: 576px)
     #home
         .box
             display: flex
             flex-direction: column
+            justify-content: center
             align-items: center
             text-align: center
+            padding: 50px 0px
             .imgbox
                 width: 275px
                 height: 100%
-                display: flex
-                justify-content: center
-                align-items: center
             .textbox
                 width: 100%
                 padding-left: 0px
@@ -59,39 +75,42 @@
         .box
             display: flex
             flex-direction: column
+            justify-content: center
             align-items: center
             text-align: center
+            padding: 50px 0px
             .imgbox
                 width: 275px
                 height: 100%
-                display: flex
-                justify-content: center
-                align-items: center
             .textbox
                 width: 100%
                 padding-left: 0px
+                h2
+                    margin-top: 20px
+      
 
 @media only screen and (min-width: 768px) and (max-width: 992px)
     #home
         .box
             display: flex
             flex-direction: column
+            justify-content: center
             align-items: center
             text-align: center
+            padding: 50px 0px
             .imgbox
-                display: flex
-                justify-content: center
-                align-items: center
+                width: 275px
+                height: 100%
             .textbox
                 width: 100%
                 padding-left: 0px
+                h2
+                    margin-top: 20px
 
 @media only screen and (min-width: 992px) and (max-width: 1200px)
     #home
         .box
+            padding: 50px 25px
             .textbox
-                padding-left: 50px
-                h1
-                    font-size: 33px
-
-
+                h3
+                    font-size: 17px
